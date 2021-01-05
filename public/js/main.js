@@ -44,31 +44,43 @@ if (tab.length != 3) {
 console.log(tab);
 
 // 7
-let chiffre = prompt('Veuillez écrire un chiffre')
 let bac1 = ['Bac 1 :'] 
 let bac2 = ['Bac 2 :']
 
-if (chiffre < 12) {
+let chiffre = prompt('Veuillez écrire un chiffre')
+if (chiffre <= 12) {
     bac1.push(chiffre)
 }
 else {
     bac2.push(chiffre)
 }
 let chiffre2 = prompt('Veuillez écrire un chiffre')
-if (chiffre2 < 12) {
+if (chiffre2 <= 12) {
     bac1.push(chiffre2)
 }
 else {
     bac2.push(chiffre2)
 }
 let chiffre3 = prompt('Veuillez écrire un chiffre')
-if (chiffre3 < 12) {
+if (chiffre3 <= 12) {
     bac1.push(chiffre3)
 }
 else {
     bac2.push(chiffre3)
 }
 
+
 alert(bac1 + bac2)
 
 // 9 
+
+let jour = prompt('Quel jour?')
+if (jour == 'Lundi' || jour =='Mardi' || jour =='Mercredi') {
+    alert(`Tu as cours en e-learning le ${jour}`)
+}
+else if (jour == 'jeudi' || jour == 'vendredi') {
+    alert(`Tu as cours en présentiel le ${jour}`)
+}
+else {
+    alert('Ta demande est erronnée bruv')
+}
